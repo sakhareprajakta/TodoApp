@@ -1,0 +1,148 @@
+body{
+  width:90%;
+  height: 100vh;
+  background-color: black;
+}
+.title{
+  text-align: center;
+  color: green;
+}
+
+ /* Main container */
+.listitem,
+.priorityitem,
+.inputitem,
+.filteritem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  list-style: none;
+  font-family: 'Courier New', monospace;
+  color: #035534;
+}
+.listitem button {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Priority buttons */
+.priorityitem button {
+  border: 1px solid #00ff99;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.priorityitem button:nth-child(2) {
+  border-color: red;
+  background: transparent;
+  color: red;
+}
+.priorityitem button:nth-child(3){
+  border-color: yellow;
+    background: transparent;
+  color: yellow;
+}
+.priorityitem button:nth-child(4) {
+  border-color: #00ff99;
+    background: transparent;
+  color: #00ff99;
+}
+
+.priorityitem button:hover {
+  background-color: #00ff99;
+  color: black;
+  box-shadow: 0 0 10px #00ff99;
+  transform: scale(1.05);
+}
+
+
+
+/* Input section */
+.inputitem input {
+  flex: 1;
+  padding: 18px;
+  background: transparent;
+  border: 1px solid #00ff99;
+  color: #00ff99;
+  font-size: 18px;
+  outline: none;
+}
+.inputitem button{
+   flex: none;
+   border: 1px solid#00ff99 ;
+   padding: 17px 30px;
+   color: #00ff99;
+   background: transparent;
+    cursor: pointer;
+   font-size: 20px;
+   
+}
+#inputtext{
+  color: white;
+
+}
+.taskbox{
+  display: flex;
+  color: green;
+   justify-content: space-between;
+  /* align-items:flex-end;
+  margin-top: 40px;
+  padding: 20px; */
+
+    justify-content: space-between; /* text left, buttons right */
+  align-items: center;
+  color: green;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid green;
+}
+
+.taskbox p {
+  margin: 0;
+  flex: 1;
+}
+.taskbox button{
+   border:  1px solid red;
+   background: transparent;
+   color: green;
+  padding: 8px 15px;
+  margin-left: 10px; /* gap between buttons */
+  cursor: pointer;
+}
+/* Bottom filter buttons */
+.filteritem {
+  display: flex;
+  margin-top: 30px;
+}
+.filteritem button {
+  flex: 1;
+  text-align: center;
+  background: transparent;
+  color: white;
+  border: 1px solid #00ff99;
+  padding: 15px;
+  cursor: pointer;
+}
+.filteritem button:hover{
+  background-color: #00ff99;
+  box-shadow: 0 0 10px #00ff99;
+  transform: scale(1.05);
+  color: black;
+}
+
+.lastitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #00ff99;
+  font-family: 'Courier New', monospace;
+  color: #00ff99;
+}
+.lastitem button{
+   border:  1px solid  green;
+   background:  transparent;
+   color: red;
+   padding: 10px 25px; 
+}
